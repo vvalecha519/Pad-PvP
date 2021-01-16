@@ -11,8 +11,12 @@ namespace Game
 	public:
 		OrbEntity();
 		~OrbEntity();
-	
+		
+		int GetId();
+
 	protected:
+		int Id;
+
 		GameEngine::SpriteRenderComponent* m_renderComponent;
 	};
 }
