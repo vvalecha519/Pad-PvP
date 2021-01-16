@@ -1,0 +1,19 @@
+#Mac OS files
+*/.DS_Store
+
+#Temporary files
+*.o
+*/output
+UbiGame_Blank/bin
+UbiGame_Blank/tmp
+UbiGame_FlappBird/bin
+UbiGame_FlappBird/tmp
+
+https://github.com/Cody-Newguyin
+#Visual Studio Meta data
+UbiGame_Blank/.vs
+UbiGame_FlappBird/.vs
+.vs/slnx.sqlite
+.vs/HackTheNorth/
+.vs/VSWorkspaceState.json
+
