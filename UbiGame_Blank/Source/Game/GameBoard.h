@@ -7,6 +7,7 @@
 namespace Game
 {
 	//Used for storing and controlling all game related entities, as well as providing an entry point for the "game" side of application	
+	class OrbEntity;
 
 	class GameBoard
 	{
@@ -16,6 +17,9 @@ namespace Game
 
 		void Update();		
 		bool IsGameOver() { return false; }
+
+	protected:
+		OrbEntity* orb;
 	};
 }
 
