@@ -10,7 +10,7 @@ using namespace Game;
 
 BoardEntity::BoardEntity() {
 	m_renderComponent = AddComponent<GameEngine::SpriteRenderComponent>();
-	m_renderComponent->SetTexture(GameEngine::eTexture::Orb_1);
+	m_renderComponent->SetTexture(GameEngine::eTexture::Board_Bg);
 	m_renderComponent->SetZLevel(2);
 	m_renderComponent->SetTileIndex(0, 0);
 
