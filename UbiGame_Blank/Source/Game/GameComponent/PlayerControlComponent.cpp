@@ -6,8 +6,6 @@
 #include "GameEngine/Util/TextureManager.h"
 #include "GameEngine/Util/AnimationManager.h"
 
-#include "Game/GameComponents/PlayerSoundComponent.h"
-
 #include <SFML/Window/Keyboard.hpp>
 
 using namespace Game;
