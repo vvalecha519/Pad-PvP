@@ -2,6 +2,7 @@
 // Purpose to create physical board to hold tiles
 
 #include "BoardEntity.h"
+#include "OrbEntity.h"
 #include "GameEngine/EntitySystem/Components/CollidableComponent.h"
 
 #include <SFML/Graphics.hpp>
@@ -9,6 +10,8 @@
 using namespace Game;
 
 BoardEntity::BoardEntity() {
+	std::vector<std::vector<OrbEntity>> tiles;
+
 	m_renderComponent = AddComponent<GameEngine::SpriteRenderComponent>();
 	m_renderComponent->SetTexture(GameEngine::eTexture::Board_Bg);
 	m_renderComponent->SetZLevel(1);
