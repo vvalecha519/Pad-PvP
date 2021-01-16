@@ -17,9 +17,9 @@ BoardEntity::BoardEntity() {
 	m_renderComponent->SetTileIndex(0, 0);
 
 	this->SetPos(sf::Vector2f(400.f, 400.f));
-	this->SetSize(sf::Vector2f(600.f, 600.f));
+	this->SetSize(sf::Vector2f(600.f, 500.f));
 
-	AddComponent<GameEngine::CollidableComponent>();
+
 }
 
 BoardEntity::~BoardEntity() {
