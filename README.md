@@ -1,5 +1,5 @@
 # Pad PvP
-Authors: Vaibhav, Ravi, Kevin, Cody
+Authors:Ravi, Kevin, Cody
 Date 1/15/2021
 
 
