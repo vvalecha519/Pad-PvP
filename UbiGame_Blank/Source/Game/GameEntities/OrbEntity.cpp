@@ -4,6 +4,8 @@ Game::OrbEntity::OrbEntity()
 {
 	m_renderComponent = AddComponent<GameEngine::SpriteRenderComponent>();
 	m_renderComponent->SetTexture(GameEngine::eTexture::Orb_1);
+	this->SetPos(sf::Vector2f(100.f, 100.f));
+	//this->SetSize(sf::Vector2f(30.f, 30.f));
 }
 
 Game::OrbEntity::~OrbEntity()

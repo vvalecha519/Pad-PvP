@@ -12,6 +12,7 @@ GameBoard::GameBoard()
 	orb = new OrbEntity();
 
 	GameEngine::GameEngineMain::GetInstance()->AddEntity(orb);
+
 }
 
 
