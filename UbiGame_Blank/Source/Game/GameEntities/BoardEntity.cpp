@@ -10,7 +10,6 @@
 using namespace Game;
 
 BoardEntity::BoardEntity() {
-	std::vector<std::vector<OrbEntity>> tiles;
 
 	m_renderComponent = AddComponent<GameEngine::SpriteRenderComponent>();
 	m_renderComponent->SetTexture(GameEngine::eTexture::Board_Bg);
