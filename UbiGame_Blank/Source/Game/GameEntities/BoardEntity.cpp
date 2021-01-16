@@ -11,8 +11,11 @@ using namespace Game;
 BoardEntity::BoardEntity() {
 	m_renderComponent = AddComponent<GameEngine::SpriteRenderComponent>();
 	m_renderComponent->SetTexture(GameEngine::eTexture::Board_Bg);
-	m_renderComponent->SetZLevel(2);
+	m_renderComponent->SetZLevel(1);
 	m_renderComponent->SetTileIndex(0, 0);
+
+	this->SetPos(sf::Vector2f(400.f, 400.f));
+	this->SetSize(sf::Vector2f(600.f, 600.f));
 
 	AddComponent<GameEngine::CollidableComponent>();
 }
