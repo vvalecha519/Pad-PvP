@@ -51,6 +51,7 @@ namespace TextureHelper
 		{
 		case GameEngine::eTexture::Orb_1:	return sf::Vector2f(75.f, 75.f);
 		case GameEngine::eTexture::Orb_2:	return sf::Vector2f(75.f, 75.f);
+		case GameEngine::eTexture::Board_Bg:	return sf::Vector2f(480.f, 405.f);
 		}
 		return sf::Vector2f(-1.f, -1.f);
 	}

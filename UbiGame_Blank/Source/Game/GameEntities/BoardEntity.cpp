@@ -19,7 +19,6 @@ BoardEntity::BoardEntity() {
 	this->SetPos(sf::Vector2f(400.f, 400.f));
 	this->SetSize(sf::Vector2f(600.f, 500.f));
 
-
 }
 
 BoardEntity::~BoardEntity() {
@@ -28,4 +27,13 @@ BoardEntity::~BoardEntity() {
 
 void BoardEntity::OnAddToWorld() {
 	Entity::OnAddToWorld();
+}
+
+void BoardEntity::initBoardPos() {
+	for (int i = 0; i < 6; i++) {
+		for (int j = 0; j < 5; j++) {
+
+			tilesPos[i][j] = this->GetPos();
+		}
+	}
 }
