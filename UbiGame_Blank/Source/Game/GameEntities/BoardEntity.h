@@ -9,6 +9,8 @@
 
 namespace Game
 {
+	class OrbEntity;
+
 	class BoardEntity : public GameEngine::Entity
 	{
 	public: 
@@ -20,6 +22,7 @@ namespace Game
 		void initBoardPos();
 
 	protected:
+		OrbEntity* orb;
 		std::vector<std::vector<OrbEntity>> tiles;
 		sf::Vector2f tilesPos[6][5];
 
