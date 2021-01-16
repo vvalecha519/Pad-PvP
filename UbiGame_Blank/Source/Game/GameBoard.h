@@ -8,6 +8,7 @@ namespace Game
 {
 	//Used for storing and controlling all game related entities, as well as providing an entry point for the "game" side of application	
 	class OrbEntity;
+	class BoardEntity;
 
 	class GameBoard
 	{
@@ -20,6 +21,7 @@ namespace Game
 
 	protected:
 		OrbEntity* orb;
+		BoardEntity* board;
 	};
 }
 
