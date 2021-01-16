@@ -4,12 +4,18 @@
 #include "BoardEntity.h"
 #include "OrbEntity.h"
 #include "GameEngine/EntitySystem/Components/CollidableComponent.h"
-
+#include "GameEngine/GameEngineMain.h"
 #include <SFML/Graphics.hpp>
 
 using namespace Game;
 
-BoardEntity::BoardEntity() {
+BoardEntity::BoardEntity() 
+	:orb(nullptr)
+{
+
+	orb = new OrbEntity();
+
+	GameEngine::GameEngineMain::GetInstance()->AddEntity(orb);
 
 	m_renderComponent = AddComponent<GameEngine::SpriteRenderComponent>();
 	m_renderComponent->SetTexture(GameEngine::eTexture::Board_Bg);

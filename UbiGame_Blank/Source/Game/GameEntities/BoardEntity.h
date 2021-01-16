@@ -9,6 +9,8 @@
 
 namespace Game
 {
+	class OrbEntity;
+
 	class BoardEntity : public GameEngine::Entity
 	{
 	public: 
@@ -18,6 +20,7 @@ namespace Game
 		virtual void OnAddToWorld() override;
 
 	protected:
+		OrbEntity* orb;
 		std::vector<std::vector<OrbEntity>> tiles;
 		GameEngine::SpriteRenderComponent* m_renderComponent;
 	};
